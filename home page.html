@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHPC - Navaratna Company</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 1rem;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .header {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+        }
+        .header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+        .header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .content {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #666;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .button-container a {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5rem;
+        }
+        .button-container a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home page.html">Home</a>
+        <a href="about us .html">About Us</a>
+        <a href="job.html">Job Opportunities</a>
+        <a href="hydro power info.html">Hydro Power Information</a>
+        <a href="history.html">History</a>
+        <a href="agriculture.html">Agriculture</a>
+    </div>
+    <div class="header">
+        <video autoplay muted loop>
+            <source src="C:\AWT-project\react projects\NHPC\nhpc.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="header-content">
+            <h1>NHPC - Navaratna Company</h1>
+            <p>Powering India with clean and sustainable energy</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="#about-us">Learn More About Us</a>
+        <a href="#job-opportunities">View Job Opportunities</a>
+        <a href="#hydro-power-information">Hydro Power Information</a>
+        <a href="#history">Our History</a>
+        <a href="#agriculture">Agriculture Initiatives</a>
+    </div>
+    <div class="content">
+        <div class="section" id="about-us">
+            <h2>About Us</h2>
+            <p>NHPC Limited is a premier organization in India with a vision to be a world-class, diversified, and transnational organization for sustainable development of hydroelectric power and water resources. With over four decades of expertise in the energy sector, NHPC stands as a pillar of strength, driving the nation's progress through its innovative and sustainable energy solutions.</p>
+        </div>
+        <div class="section" id="job-opportunities">
+            <h2>Job Opportunities</h2>
+            <p>Explore the latest job openings at NHPC and be a part of India's leading hydro power company. We offer a dynamic work environment where employees can grow and excel. Join us in our mission to harness the power of water and make a meaningful impact on the environment and society.</p>
+            <ul>
+                <li><strong>Engineer Trainee</strong>: Fresh graduates in engineering disciplines can apply. Gain hands-on experience and work on cutting-edge projects that shape the future of energy.</li>
+                <li><strong>Management Trainee</strong>: Opportunities for MBA graduates in various specializations. Develop your leadership skills and contribute to strategic decision-making processes.</li>
+                <li><strong>Technician Apprentice</strong>: ITI certificate holders in relevant trades are welcome. Enhance your technical skills and work with state-of-the-art technology.</li>
+                <li><strong>Internships</strong>: We offer internships to students in engineering and management streams. Get real-world experience and kickstart your career with NHPC.</li>
+            </ul>
+            <p>For more details and to apply, visit our <a href="https://www.nhpcindia.com/welcome/job" target="_blank">Careers Page</a>.</p>
+        </div>
+        <div class="section" id="hydro-power-information">
+            <h2>Hydro Power Information</h2>
+            <p>NHPC is involved in the planning, development, and implementation of an integrated and efficient network of hydroelectric power projects. We are committed to delivering clean, renewable energy to meet the growing demands of the nation while ensuring environmental sustainability and social responsibility. Our projects span across diverse terrains and utilize the latest technologies to maximize efficiency and minimize impact.</p>
+        </div>
+        <div class="section" id="history">
+            <h2>History</h2>
+            <p>Established in 1975, NHPC has grown to become a key player in India's power sector, contributing significantly to the country's energy needs. From our humble beginnings to our current status as a Navaratna company, our journey has been marked by numerous milestones and achievements. We continue to build on our legacy, driving innovation and excellence in every project we undertake.</p>
+        </div>
+        <div class="section" id="agriculture">
+            <h2>Agriculture</h2>
+            <p>NHPC supports various agricultural initiatives through its CSR programs, promoting sustainable agriculture and rural development. We believe in empowering communities and ensuring that the benefits of our projects extend beyond energy generation. Our efforts include providing training, resources, and infrastructure to help farmers increase productivity and adopt sustainable practices.</p>
+        </div>
+    </div>
+</body>
+</html>
